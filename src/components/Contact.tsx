@@ -26,7 +26,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const whatsappUrl = generateWhatsAppUrl('contact', formData);
+    const whatsappUrl = generateWhatsAppUrl(formType, formData);
     window.open(whatsappUrl, '_blank');
     
     // Réinitialiser le formulaire
